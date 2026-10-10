@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Whispering Grove</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <div id="topBar">
+    <div id="statusPanel"></div>
+    <button id="menuButton">☰</button>
+  </div>
+
+  <div id="toast"></div>
+
+  <div id="dialogueBox">
+    <div id="speaker"></div>
+    <div id="dialogueText"></div>
+    <button id="dialogueNext">Next</button>
+  </div>
+
+  <div id="inventoryPanel">
+    <h2>Inventory</h2>
+    <div id="inventoryItems"></div>
+    <button class="panelButton" id="closeInventory">Close</button>
+  </div>
+
+  <div id="menuPanel">
+    <h2>Whispering Grove</h2>
+    <button class="panelButton" id="inventoryMenuButton">Open Inventory</button>
+    <button class="panelButton" id="saveButton">Save Game</button>
+    <button class="panelButton" id="resetButton">Reset Game</button>
+    <button class="panelButton" id="closeMenu">Close</button>
+  </div>
+
+  <div id="controls">
+    <div id="joystick"><div id="joystickKnob"></div></div>
+    <div id="actionButtons">
+      <button class="actionButton" id="talkButton">TALK</button>
+      <button class="actionButton" id="interactButton">USE</button>
+      <button class="actionButton" id="bagButton">BAG</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
