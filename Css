@@ -1,0 +1,14 @@
+:root { --panel: rgba(25, 39, 45, 0.92); --panel-light: rgba(255, 244, 194, 0.94); --text: #fff4c2; --dark-text: #263238; --accent: #f2c879; --border: #f7e7ad; }
+* { box-sizing: border-box; touch-action: none; -webkit-tap-highlight-color: transparent; user-select: none; }
+html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #182c35; font-family: monospace; }
+canvas { display: block; width: 100%; height: 100%; image-rendering: pixelated; }
+#topBar { position: fixed; top: 10px; left: 10px; right: 10px; z-index: 5; display: flex; justify-content: space-between; }
+#statusPanel { padding: 8px; color: var(--text); background: var(--panel); border: 2px solid var(--border); border-radius: 8px; font-size: 13px; }
+#controls { position: fixed; z-index: 4; inset: auto 0 20px 0; height: 150px; }
+#joystick { position: absolute; left: 22px; bottom: 0; width: 132px; height: 132px; border-radius: 50%; background: rgba(30, 49, 54, 0.48); border: 3px solid rgba(255, 244, 194, 0.75); }
+#joystickKnob { position: absolute; left: 50%; top: 50%; width: 56px; height: 56px; margin: -28px 0 0 -28px; border-radius: 50%; background: var(--accent); }
+#actionButtons { position: absolute; right: 20px; bottom: 4px; display: flex; gap: 12px; }
+.actionButton { width: 74px; height: 74px; border-radius: 50%; background: var(--panel); color: white; border: 2px solid white; }
+#dialogueBox, #inventoryPanel, #menuPanel { position: fixed; z-index: 20; left: 50%; top: 50%; transform: translate(-50%, -50%); display: none; background: var(--panel); color: white; padding: 20px; border: 2px solid var(--border); border-radius: 10px; }
+.panelButton { width: 100%; margin-top: 10px; padding: 10px; }
+#toast { position: fixed; z-index: 15; left: 50%; top: 78px; transform: translateX(-50%); display: none; background: var(--panel-light); color: var(--dark-text); padding: 8px; border-radius: 6px; }
